@@ -5,21 +5,21 @@
 class Bm < Formula
   desc "Your command-line sidekick for teleporting to files, folders, and URLs in one hop."
   homepage "https://github.com/Shu-AFK/bm"
-  version "0.3.0"
+  version "0.3.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Shu-AFK/bm/releases/download/v0.3.0/bm_0.3.0_darwin_amd64.tar.gz"
-      sha256 "c719825ed6b94b228cc762bc544d6341e19cd3279757d61f546c181e43138613"
+      url "https://github.com/Shu-AFK/bm/releases/download/v0.3.1/bm_0.3.1_darwin_amd64.tar.gz"
+      sha256 "64727b92e2473c45c8875893fbcded21389e22dfbfb6c4cf4796889290f7814a"
 
       def install
         bin.install "bm"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Shu-AFK/bm/releases/download/v0.3.0/bm_0.3.0_darwin_arm64.tar.gz"
-      sha256 "600092d6cfbb9315520f253d9aef13fb99145c08d09a4d2b68285c39c06d0f28"
+      url "https://github.com/Shu-AFK/bm/releases/download/v0.3.1/bm_0.3.1_darwin_arm64.tar.gz"
+      sha256 "369118ed860307e37f2aa62d06ebdc0050b2f9aa58707f9877614a3a963e17eb"
 
       def install
         bin.install "bm"
@@ -29,15 +29,15 @@ class Bm < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Shu-AFK/bm/releases/download/v0.3.0/bm_0.3.0_linux_amd64.tar.gz"
-      sha256 "32038ed3ac48d10f749ac8315fd0db52cb923b0d938826b1b857e5b6323a5370"
+      url "https://github.com/Shu-AFK/bm/releases/download/v0.3.1/bm_0.3.1_linux_amd64.tar.gz"
+      sha256 "ac9d4216273bb12364795fc3bdf02f0c18c59cd859b41741cea64bfe4bdd2d1b"
       def install
         bin.install "bm"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Shu-AFK/bm/releases/download/v0.3.0/bm_0.3.0_linux_arm64.tar.gz"
-      sha256 "a7e057f9ce9070e1ce34b3a38ec677a88e93bf74f7cfdc2871f2aa9d20dcd3bc"
+      url "https://github.com/Shu-AFK/bm/releases/download/v0.3.1/bm_0.3.1_linux_arm64.tar.gz"
+      sha256 "9bf71a0eb9ea7fd09a605ac9ad619559b2a69ef9d34e9425f0db2a17d4a69185"
       def install
         bin.install "bm"
       end
